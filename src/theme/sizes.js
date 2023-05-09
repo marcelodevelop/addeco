@@ -1,4 +1,5 @@
 export const sizes = {
-    shark: "16px",
+    bird: "14px",
+    turtle: "16px",
     bear: "18px",
 }

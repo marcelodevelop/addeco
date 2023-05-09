@@ -1,4 +1,8 @@
 export const colors = {
-    red: "#555555",
-    blue: "blue",
+    error: "#A4031F",
+    grey: "#889696",
+    white: "#FFFFFA",
+    blue: "#004385",
+    darkgrey: "#474350",
+    lightgrey: "#828A95",
 }
