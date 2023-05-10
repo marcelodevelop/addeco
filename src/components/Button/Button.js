@@ -1,8 +1,8 @@
 import { StyledButton } from "./Button.styles"
 
-const Button = () => {
+const Button = ({ onClick }) => {
     return (
-        <StyledButton>
+        <StyledButton onClick={onClick}>
             Sign In
         </StyledButton>
     )
