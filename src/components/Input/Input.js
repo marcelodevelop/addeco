@@ -4,12 +4,12 @@ import {
     StyledInput 
 } from "./Input.styles"
 
-const Input = ({ error, errorLabel, ...props }) => {
+const Input = ({ error, ...props }) => {
     return (
         <StyledContainer>
             <StyledInput {...props}/>
             {error && (
-                <StyledError>{errorLabel}</StyledError>
+                <StyledError>{error.label}</StyledError>
             )}
         </StyledContainer>
     )

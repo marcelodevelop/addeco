@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import { Provider } from 'react-redux';
+
+import store from 'store';
 
 import { theme } from "./theme";
 import GlobalStyle from "./theme/global";
@@ -16,13 +19,15 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App />}/>
-            <Route path="signin" index element={<SignIn />} />
-            <Route path="home" element={<Home/>} />
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App />}/>
+              <Route path="signin" index element={<SignIn />} />
+              <Route path="home" element={<Home/>} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </ThemeProvider>
   </React.StrictMode>
 );
