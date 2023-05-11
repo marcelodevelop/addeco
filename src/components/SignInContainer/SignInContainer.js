@@ -40,13 +40,8 @@ const SignInContainer = () => {
     }
 
     const handlePasswordChange = e => {
-        if(e.target.value) {
+        if(e.target.value.length) {
             setPassword(e.target.value)
-        } else {
-            setInputPasswordError({
-                error: true,
-                label: "Contraseña faltante"
-            })
         }
     }
 
@@ -56,7 +51,6 @@ const SignInContainer = () => {
                 password,
                 email
             }
-
             postData(body)
         }
     }

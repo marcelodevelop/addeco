@@ -5,11 +5,11 @@ import {
     StyledName
 } from "./UserCard.styles"
 
-const UserCard = ({ data }) => {
+const UserCard = ({ data, onClick }) => {
     const { email, first_name: firstName, last_name: lastName, avatar } = data || {}
 
     return (
-        <StyledContainer>
+        <StyledContainer onClick={onClick}>
             <StyledAvatar $background={avatar}/>
             <StyledName>
                 {firstName}
