@@ -11,6 +11,7 @@ import GlobalStyle from "./theme/global";
 
 import SignIn from './Pages/SignIn';
 import Home from './Pages/Home';
+import Posts from 'Pages/Posts';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
               <Route path="/" element={<App />}/>
               <Route path="signin" index element={<SignIn />} />
               <Route path="home" element={<Home/>} />
+              <Route path="posts/:id" element={<Posts/>} />
           </Routes>
         </BrowserRouter>
       </Provider>

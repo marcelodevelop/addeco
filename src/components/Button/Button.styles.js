@@ -12,5 +12,6 @@ export const StyledButton = styled.button`
     font-size: ${({ theme }) => theme.sizes.turtle};
     justify-content: center;
     font-weight: 600;
-    opacity: ${({ $isLoading }) => $isLoading ? 0.5 : 1}
+    opacity: ${({ $isLoading }) => $isLoading ? 0.5 : 1};
+    margin-bottom: 20px;
 `
