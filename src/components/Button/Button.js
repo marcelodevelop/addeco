@@ -1,8 +1,8 @@
 import { StyledButton } from "./Button.styles"
 
-const Button = ({ onClick }) => {
+const Button = ({ onClick, isLoading }) => {
     return (
-        <StyledButton onClick={onClick}>
+        <StyledButton $isLoading={isLoading} onClick={onClick}>
             Sign In
         </StyledButton>
     )
