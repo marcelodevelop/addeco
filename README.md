@@ -29,3 +29,7 @@ yarn start
 ```
 
 to start the project
+
+#### After starting the project use this credentials to sign up
+- eve.holt@reqres.in
+- cityslicka
