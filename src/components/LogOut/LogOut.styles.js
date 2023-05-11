@@ -6,4 +6,6 @@ export const StyledContainer = styled.div`
     right: 20px;
     font-weight: 900;
     font-size: ${({ theme }) => theme.sizes.turtle};
+    position: absolute;
+    cursor: pointer;
 `

@@ -48,6 +48,12 @@ const HomeContainer = () => {
         }
     }
 
+    const handleOnAlbumClick = id => {
+        if(id) {
+            navigate(`/users/${id}/album`)
+        }
+    }
+
     const renderModal = userSelected => {
         const findSelectedUser = user.filter(e => e.id === userSelected)
         
@@ -58,6 +64,7 @@ const HomeContainer = () => {
                 <StyledName>{e.first_name}{" "}{e.last_name}</StyledName>
                 <StyledEmail>{e.email}</StyledEmail>
                 <StyledLink onClick={() => handleOnPostsClick(e.id)}>POSTS</StyledLink>
+                <StyledLink onClick={() => handleOnAlbumClick(e.id)}>ALBUM</StyledLink>
             </StyledModal>
         ))
 
