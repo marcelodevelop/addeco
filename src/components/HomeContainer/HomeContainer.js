@@ -28,8 +28,6 @@ const HomeContainer = () => {
     const [data, setData] = useState()
     const [selectedUser, setSelectedUser] = useState()
 
-    console.log(user)
-
     const { data: reqresData, error, isLoading } = useGet('https://reqres.in/api/users')
 
     const handleOnClick = id => {
